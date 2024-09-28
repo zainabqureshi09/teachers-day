@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teacher's Day</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Happy Teacher's Day!</h1>
+            <h1><small><i>By Zainab Ayaz</i></small></h1>
+        </div>
+        <div class="content">
+            <p class="quote">"A teacher takes a hand, opens a mind, and touches a heart."</p>
+            <p class="thank-you">Thank you for your patience, time, and guidance!</p>
+            <button class="animate-btn">Surprise Message</button>
+            <div class="surprise-message hidden">
+                <p>You're the best, teacher!</p>
+            </div>
+        </div>
+        <footer>
+            <p>With love and respect, from your students ❤️</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple button to show surprise message
+        const button = document.querySelector('.animate-btn');
+        const surpriseMessage = document.querySelector('.surprise-message');
+        
+        button.addEventListener('click', () => {
+            surpriseMessage.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
